@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: #80808024;
+}
+.users_wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user_container {
+    width: 46%;
+    margin: 5px;
+    border: 1px solid #80808057;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.load_more_users_wrapper{
+    margin: 5px;
+    text-align: center;
+}
+.user_image_wrapper {
+    min-height: 15px;
+    text-align: center;
+}
+.user_container p {
+    margin-bottom: 0
+}
+.user_info_wrapper {
+    padding: 5px;
+    border: 1px solid #00000026;
+    background-color: beige;
+}
+
+@media only screen and (max-width: 810px) {
+    .user_container {
+        width: 100%;
+    }
+}

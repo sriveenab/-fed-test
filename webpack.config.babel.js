@@ -147,7 +147,15 @@ const defaultConfig = {
 		}
 	},
 	module: {
-		rules: [js, svg, images]
+		rules: [
+			js,
+			svg,
+			images,
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
+			}
+		]
 	},
 	optimization: {
 		splitChunks: {
